@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Attacker Site</title>
+   <script>
+      function load() {
+         // get user info
+         const userInfo = frm.document.querySelector('#user_info');
+         // Output user information string to log
+         console.log(userInfo.textContent);
+      }
+   </script>
+</head>
+
+<body>
+   <iframe name="frm" onload="load()" src="http://site.example:3000/user.html" frameborder="0" width="80%"></iframe>
+</body>
+
+</html>
